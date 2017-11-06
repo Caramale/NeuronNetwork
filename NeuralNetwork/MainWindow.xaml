@@ -1,0 +1,24 @@
+﻿<Window x:Class="NeuralNetwork.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NeuralNetwork"
+        mc:Ignorable="d"
+        Title="Neural Network" Height="500" Width="850" ResizeMode="NoResize" HorizontalAlignment="Center" VerticalAlignment="Center" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FF3A7CA2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="361.433"/>
+            <ColumnDefinition Width="250.567"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <InkCanvas x:Name="inkCanvas" Margin="10,10,0,10" HorizontalAlignment="Left" Cursor="Pen">
+            <InkCanvas.DefaultDrawingAttributes>
+                <DrawingAttributes Color="Black" FitToCurve="False" Height="5" IgnorePressure="False" IsHighlighter="False" StylusTip="Ellipse" StylusTipTransform="Identity" Width="5"/>
+            </InkCanvas.DefaultDrawingAttributes>
+        </InkCanvas>
+        <Button x:Name="button" Content="Clear" Margin="50,50,50,0" Grid.Column="1" VerticalAlignment="Top" Click="button_Click"/>
+        <Button x:Name="button1" Content="Recognize" Grid.Column="1" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="151" Click="button1_Click"/>
+
+    </Grid>
+</Window>
